@@ -1,5 +1,7 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from "react-router-dom";
+
 export default function About() {
   const TeamMemberCard = ({ name, role, image }) => {
     return (
@@ -124,9 +126,11 @@ export default function About() {
           Faites partie de la communauté DZ-Artisan et simplifiez vos travaux
           dès aujourd'hui.
         </p>
+        <Link to="/Connexion">
         <button className="bg-white text-primary px-6 py-3 rounded-lg shadow hover:bg-gray-100">
           Créez votre compte
         </button>
+        </Link>
       </div>
     </div>
      <Footer/>

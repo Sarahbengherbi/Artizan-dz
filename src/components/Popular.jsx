@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 /* eslint-disable react/prop-types */
 import { HiLocationMarker } from "react-icons/hi";
 import { FaStar } from "react-icons/fa";
@@ -124,9 +126,11 @@ export default function Popular() {
                 En valorisant l'artisanat, nous contribuons à la préservation de notre patrimoine culturel.
               </p>
             </div>
+            <Link to="/Connexion">
             <button className="bg-primary text-white px-6 py-3 transition-bg hover:bg-white hover:text-primary rounded-xl shadow my-8">
               Découvrez nos créations
             </button>
+            </Link>
           </div>
           <div className="lg:w-1/2 h-full overflow-hidden rounded-2xl">
             <img

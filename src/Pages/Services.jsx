@@ -1,6 +1,8 @@
 import { FaWrench, FaFileInvoice, FaCalendarCheck } from "react-icons/fa";
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Link } from "react-router-dom";
+
 export default function Services() {
   const ServiceCard = ({ icon, title, description }) => {
     return (
@@ -111,9 +113,11 @@ export default function Services() {
       <div className="text-center py-12 bg-primary text-white rounded-lg">
         <h2 className="text-3xl font-bold mb-4">Prêt à commencer ?</h2>
         <p className="mb-6">Rejoignez DZ-Artisan dès aujourd'hui et facilitez vos travaux.</p>
-        <button className="bg-white text-primary px-6 py-3 rounded-lg shadow hover:bg-gray-100">
+      <Link to="/Connexion">        <button className="bg-white text-primary px-6 py-3 rounded-lg shadow hover:bg-gray-100">
           Inscrivez-vous maintenant
         </button>
+                    </Link>
+        
       </div>
     </div>
      <Footer/>
